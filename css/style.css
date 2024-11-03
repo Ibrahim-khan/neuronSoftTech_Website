@@ -1,0 +1,266 @@
+/*Navbar Start*/
+.navbar-light-gray {
+  background-color: #ffffff; /* You can also use a hex value like #d3d3d3 */
+}
+
+/* Default responsive image */
+.img-fluid {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Media query for screens larger than 700px */
+@media screen and (min-width: 700px) {
+  .img-fluid {
+    width: 250px; /* Set specific width */
+    height: 70px; /* Set specific height */
+  }
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #1f1f1f; /* White text for nav links */
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #5d09e4; /* Lighter color on hover */
+}
+.btn-quote {
+  background-color: #ffc107; /* Yellow button */
+  color: black; /* Black text for the button */
+  float: right;
+}
+.btn-quote:hover {
+  background-color: lightgray; /* Darker yellow on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+.navbar-toggler .menu-icon {
+  color: black; /* Set menu icon color to black */
+  font-size: 1.2em; /* Increase icon size */
+}
+
+/*Main area start*/
+.area__content {
+  padding-left: 30px;
+}
+
+.heading-title {
+  font-size: 2rem; /* Base font size for smaller screens */
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .heading-title {
+    font-size: 3rem; /* Increase font size on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .heading-title {
+    font-size: 4rem; /* Full font size on large screens */
+  }
+}
+
+.area__content {
+  text-align: left;
+}
+
+.contact_btn {
+  border: none;
+  border-radius: 5px;
+}
+
+.contact_btn:hover {
+  background-color: red !important;
+}
+
+.area__subtitle {
+  font-size: 1.5rem; /* Subtitle size */
+}
+
+.area__title p {
+  font-size: 1.75rem; /* Title size */
+  font-weight: bold; /* Bold title */
+}
+
+.area__description p {
+  font-size: 18px; /* Description size */
+  color: #6c757d;
+  text-align: left; /* Muted text color */
+}
+
+.video-tutorial {
+  border-radius: 10px;
+  overflow: hidden; /* Ensures rounded corners are applied */
+}
+
+.ratio iframe {
+  border-radius: 20px;
+}
+
+/*Video end*/
+
+/*About Us Start*/
+.long-em-dash {
+  display: inline-block;
+  width: 50px;
+  border-bottom: 2px solid white;
+  margin: 2px 2px;
+}
+
+.soft_dev_img {
+  margin-top: -5px;
+}
+@media (max-width: 768px) {
+  .soft_dev_img {
+    margin-top: -5px;
+  }
+}
+
+.box__description img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+/*About Us end*/
+
+/* Carousel start */
+.carousel-container {
+  background: #1a26a9;
+  padding: 50px 0;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  min-width: 80px;
+  max-width: 150px;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Continuous scrolling */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Carousel end */
+
+/*Our Service start*/
+.card {
+  border-radius: 8px;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+/*Our Service end*/
+
+/*Team start*/
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows the cards to wrap on smaller screens */
+  gap: 20px;
+  padding: 10px;
+}
+.card-team {
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Default to full width */
+  max-width: 300px; /* Limit the maximum width for larger screens */
+  flex: 1 1 45%; /* Allows two cards per row on medium screens */
+}
+
+.card-img-team {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.card-team img {
+  max-width: 100%;
+  height: auto;
+}
+.card-body-team {
+  background-color: #2334de;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -80px;
+  position: relative;
+}
+.card-body-team p {
+  color: white;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.social-icons a {
+  color: white;
+}
+.social-icons a:hover {
+  color: black;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: lightgray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*Team end*/
+
+/*Counter start*/
+.bg-gradient {
+  background-color: #1a26a9;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+/*Main area end*/
